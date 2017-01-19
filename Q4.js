@@ -19,3 +19,5 @@ var cars = {
     }
 };
 console.log(cars.getBrands());
+
+// correct
