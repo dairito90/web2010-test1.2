@@ -38,3 +38,6 @@ cars.getModels = function(){
 };
 
 console.log(cars.getModels());
+
+// Half credit.
+// You forgot to change car.brand to car.model
