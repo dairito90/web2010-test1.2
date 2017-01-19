@@ -40,10 +40,9 @@ of the $btn element, similar to how it was done above. -->
     <!-- Your JavaScript code -->
     <script>
         var $btn = $('#btn');
-$btn.getBoundingClientRect();
-
-
+        var position =  $btn.getBoundingClientRect(0);
         console.log("Button top position: " + btnPosition.top );
+
     </script>
 </body>
 </html>

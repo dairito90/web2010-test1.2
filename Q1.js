@@ -15,4 +15,4 @@ function foo(string) {
     }
 }
 
-foo(bird)();
+foo('bird')();

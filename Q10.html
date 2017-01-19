@@ -6,14 +6,12 @@ when you click on the button. -->
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test 1</title>
 </head>
-
 <body>
 
     <h1>Question 10</h1>
@@ -25,16 +23,15 @@ when you click on the button. -->
 
     <!-- Your JavaScript code -->
     <script>
-        setTimeout(function() {
-                    var $btn = $('#btn');
+    var $btn = $('#btn');
+    $btn.click(function(){
 
-                    $btn.click(function() {
-                        $btn.html(''
-                            I ve been clicked!'');
+setTimeout(function(){
+  $btn.html('Ive been clicked!' );
+}, 500 );
 
+    });
 
-                    }, 500);
     </script>
 </body>
-
 </html>

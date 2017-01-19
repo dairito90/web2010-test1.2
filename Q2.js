@@ -20,18 +20,17 @@
 //
 // Lastly, test your adventureSelector function by immediately invoking the
 // function it returns when you pass it the number 2.
+adventureSelector(function() {
+    if (num === 1) {
+        return function() {
+            console.log('You selected the Vines of Doom!');
+        }
 
+    } else if (num === 2) {
+        return function() {
+            console.log(' Looks like you want the Lake of Despair!');
+        }
+    }
 
-
-adventureSelector function(num) {
-if (num === 1){
-  return (num)
-  console.log('You selected the Vines of Doom!');
-}else if(num === 3) {
-  return (num)
-  console.log('The Caves of Catastrophe!');
-}
-
-};
-
+});
 adventureSelector(2)();

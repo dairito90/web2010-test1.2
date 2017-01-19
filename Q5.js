@@ -11,44 +11,30 @@
 // Lastly, log to the console the return value of the getModels method.
 
 var cars = {
-    list: [{
-        brand: 'honda',
-        model: 'civic',
-        year: 2004
-    }, {
-        brand: 'ford',
-        model: 'f-150',
-        year: 2016
-    }, {
-        brand: 'chevrolet',
-        model: 'camaro',
-        year: 1970
-    }],
+    list: [
+        {brand: 'honda', model: 'civic', year: 2004},
+        {brand: 'ford', model: 'f-150', year: 2016},
+        {brand: 'chevrolet', model: 'camaro', year: 1970}
+    ],
     getBrands: function() {
         var brands = [];
 
         cars.list.forEach(function(car) {
-            brands.push(car.brands);
+            brands.push( car.brand );
         });
 
         return brands;
     }
 };
 
-
-
-
-getModels function () {
+cars.getModels = function(){
   var models = [];
 
   cars.list.forEach(function(car) {
-      models.push(car.models);
+      models.push( car.brand );
   });
 
-  return brands;
-
-
+  return models;
 };
 
-
-console.log(getModels(0));
+console.log(cars.getModels());

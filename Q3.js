@@ -8,5 +8,5 @@ function foo(num) {
   return num + 2;
 }
 
-var $bar = $(num);
-console.log(num);
+var bar = foo;
+console.log(bar(3));

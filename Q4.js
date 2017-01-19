@@ -18,6 +18,4 @@ var cars = {
         return brands;
     }
 };
-
-console.log(brands(0));
- 
+console.log(cars.getBrands());

@@ -23,11 +23,10 @@ between 0 and 3 (including 0, but not 3) inside the button
 
     <!-- Your JavaScript code -->
     <script>
-var $btn = $('#btn');
-$btn.click(function() {
-  Math.random * 2;
-});
-
+    var $btn = $('#btn');
+    $btn.click(function(){
+      $btn.html(Math.random()* 3);
+    });
 
     </script>
 </body>
